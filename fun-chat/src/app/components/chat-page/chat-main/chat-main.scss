@@ -1,0 +1,23 @@
+.chat-main {
+  overflow: hidden;
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: stretch;
+
+  width: 100%;
+  height: 90%;
+  padding: 0 1rem;
+}
+
+@media screen and (width <= 690px) {
+  .chat-main {
+    overflow: auto;
+    flex-basis: auto;
+    flex-direction: column;
+
+    height: auto;
+    max-height: 1000px;
+  }
+}

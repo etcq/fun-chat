@@ -1,0 +1,16 @@
+@use '../../../../../styles/variables' as vars;
+
+.chat-dialog-window {
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+
+  background: vars.$main-bg-color;
+}

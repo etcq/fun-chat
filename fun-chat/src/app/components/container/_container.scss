@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as *;
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: $secondary-bg-color;
+}
+
+@media screen and (width <= 690px) {
+  .container {
+    height: 100%;
+  }
+}

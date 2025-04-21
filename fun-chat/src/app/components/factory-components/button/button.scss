@@ -1,0 +1,38 @@
+@use '../../../../styles/variables' as *;
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid $secondary-text-color;
+  border-radius: 0.3rem;
+
+  font-size: 0.8rem;
+  color: $main-text-color;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 6px $secondary-text-color;
+  }
+
+  &:active {
+    color: $secondary-bg-color;
+    background-color: $main-text-color;
+  }
+
+  &:disabled {
+    border: 2px solid $main-bg-color;
+    color: $main-bg-color;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      border: 2px solid $main-bg-color;
+      color: $main-bg-color;
+      background-color: $secondary-bg-color;
+    }
+  }
+}

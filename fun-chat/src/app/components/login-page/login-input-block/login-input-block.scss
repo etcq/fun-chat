@@ -1,0 +1,13 @@
+@use '../../../../styles/variables' as vars;
+
+.login-block {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 80%;
+
+  font-size: 1rem;
+}

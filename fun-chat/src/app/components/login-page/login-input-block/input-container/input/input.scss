@@ -1,0 +1,22 @@
+@use '../../../../../../styles/variables' as vars;
+
+.login-block-input {
+  height: 2rem;
+  padding-left: 0.5rem;
+  border: 1px solid vars.$main-text-color;
+  border-radius: 0.2rem;
+
+  color: vars.$paragraph-text-color;
+
+  background-color: vars.$main-bg-color;
+
+  &:focus {
+    box-shadow: 0 0 10px 6px vars.$secondary-text-color;
+  }
+
+  &:invalid {
+    border: 1px solid #f00;
+    color: #f00;
+    box-shadow: 0 0 10px 6px rgb(139 36 36);
+  }
+}

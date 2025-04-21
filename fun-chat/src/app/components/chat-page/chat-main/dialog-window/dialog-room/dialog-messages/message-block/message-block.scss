@@ -1,0 +1,26 @@
+@use '../../../../../../../../styles/variables' as vars;
+
+.message {
+  width: 50%;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+
+  color: vars.$main-bg-color;
+
+  background-color: vars.$secondary-text-color;
+
+  &-text {
+    margin: 0;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+
+    font-size: 10.5px;
+    color: vars.$main-text-color;
+
+    background-color: vars.$main-bg-color;
+  }
+}
+
+.mine {
+  align-self: flex-end;
+}

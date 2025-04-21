@@ -1,0 +1,22 @@
+@use '../../../../../../../styles/variables' as vars;
+
+.dialog-room-form {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+
+  background-color: vars.$secondary-bg-color;
+
+  &-textarea {
+    resize: none;
+
+    // height: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}

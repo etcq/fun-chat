@@ -1,0 +1,25 @@
+@use '../../../../../../../styles/variables' as vars;
+
+.dialog-room-messages {
+  overflow: clip;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 1;
+  gap: 0.5rem;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  background-color: vars.$secondary-bg-color;
+
+  &-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+  }
+}

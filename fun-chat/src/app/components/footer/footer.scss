@@ -1,0 +1,36 @@
+@use '../../../styles/variables' as vars;
+
+.footer {
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 4rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-top: 1px solid vars.$main-text-color;
+
+  &-anchor {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .github {
+    background-image: url('src/assets/github.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .school {
+    width: 7rem;
+    height: 3rem;
+
+    background-image: url('src/assets/rss..svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

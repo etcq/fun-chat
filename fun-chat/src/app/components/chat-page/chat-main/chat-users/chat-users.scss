@@ -1,0 +1,22 @@
+@use '../../../../../styles/variables' as vars;
+
+.chat-users {
+  overflow: hidden auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 0.5rem;
+
+  height: 100%;
+  max-height: 350px;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+  border-right: 1px solid vars.$main-text-color;
+}
+
+@media screen and (width <= 690px) {
+  .chat-users {
+    border-right: none;
+  }
+}

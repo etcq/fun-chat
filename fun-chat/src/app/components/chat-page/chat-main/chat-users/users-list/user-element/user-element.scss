@@ -1,0 +1,60 @@
+@use '../../../../../../../styles/variables' as vars;
+
+.user-element {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  justify-content: flex-start;
+
+  padding: 0.4rem;
+  border: 1px solid vars.$main-text-color;
+  border-radius: 0.5rem;
+
+  font-size: 0.9rem;
+
+  &-status {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+
+  &-name {
+    width: 65%;
+    font-stretch: condensed;
+  }
+
+  &-counter {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.2rem;
+    border-radius: 50%;
+
+    font-weight: bold;
+    color: vars.$main-bg-color;
+
+    background-color: vars.$secondary-text-color;
+  }
+
+  .active {
+    background-color: #0f0;
+  }
+
+  .inactive {
+    background-color: #f00;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 6px vars.$secondary-text-color;
+  }
+
+  &:active {
+    color: vars.$secondary-bg-color;
+    background-color: vars.$main-text-color;
+  }
+}

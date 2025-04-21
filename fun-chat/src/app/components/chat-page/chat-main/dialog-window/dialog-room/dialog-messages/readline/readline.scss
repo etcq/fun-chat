@@ -1,0 +1,17 @@
+@use '../../../../../../../../styles/variables' as vars;
+
+.readline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  margin: 0.4rem 0;
+
+  &-separator {
+    width: 30%;
+    height: 2px;
+    background-color: vars.$secondary-text-color;
+  }
+}

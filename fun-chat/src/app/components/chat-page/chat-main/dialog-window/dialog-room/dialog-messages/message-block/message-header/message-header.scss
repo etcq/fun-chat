@@ -1,0 +1,46 @@
+.message-header {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 1rem;
+
+  font-size: 9px;
+
+  &-name {
+    font-weight: bold;
+  }
+
+  &-button {
+    position: absolute;
+    left: -24px;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    border: none;
+
+    font-size: 1rem;
+
+    background-color: transparent;
+
+    &:hover {
+      color: #f00;
+      box-shadow: none;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  .edit {
+    top: 27px;
+
+    &:hover {
+      color: #0f0;
+    }
+  }
+}
